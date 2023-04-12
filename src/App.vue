@@ -83,6 +83,25 @@
       </div>
     </div>
   </div>
+  <br />
+  <div class="container justify-content-center d-flex">
+    <button class="btn btn-primary" @click.prevent="rollDice">Rolar Dado</button>
+  </div>
+  <br />
+  <div id="result-box" class="container text-center">
+    <button
+    type="button"
+    class="btn btn-secondary btn-lg"
+    data-bs-container="body"
+    data-bs-toggle="popover"
+    data-bs-placement="top"
+    data-bs-content="Zero"
+    id="output"
+    >
+    {{ result }}
+  </button>
+</div>
+
 <Style>
 #navbar {
   position: fixed;
@@ -106,9 +125,53 @@ body {
 <script>
 import CharacterInputs from "./components/CharacterInputs.vue";
 export default {
+  data() {
+    return {
+      selectedDice: "d10",
+      result: null
+    };
+  },
   name: "App",
   components: {
     CharacterInputs, 
+  },
+  methods: {
+    rollDice() {
+      const random = (min, max) => Math.floor(Math.random() * (max - min + 1) + min);
+      switch (this.selectedDice) {
+        case "d4":
+          this.result = random(1, 4);
+          break;
+
+        case "d6":
+          this.result = random(1, 6);
+          break;
+
+        case "d8":
+          this.result = random(1, 8);
+          break;
+
+        case "d10":
+          this.result = random(1, 10);
+          break;
+
+        case "d12":
+          this.result = random(1, 12);
+          break;
+
+        case "d20":
+          this.result = random(1, 20);
+          break;
+
+        case "d100":
+          this.result = random(1, 100);
+          break;
+
+        default:
+          break;
+      }
+    }
+  }
   }
 };
 </script>
