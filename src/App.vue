@@ -104,11 +104,11 @@ body {
 </Style>
 </template>
 <script>
-import NavBar from './components/NavBar.vue';
+import CharacterInputs from "./components/CharacterInputs.vue";
 export default {
   name: "App",
   components: {
-    CharacterInputs
+    CharacterInputs, 
   }
 };
 </script>
