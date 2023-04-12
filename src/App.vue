@@ -31,6 +31,57 @@
 </nav>
 <CharacterInputs />
 </header>
+<br />
+<div class="col-12 py-3">
+  <div class="col-12 py-3">
+    <div class="row p-0 m-0">
+      <div class="col-12 text-center">
+        <form>
+          <input type="radio" v-model="selectedDice" value="d4" id="d4" />
+          <label for="d4">
+            d4<img src="./components/img/d4.png" class="img d-block" id="d4img"
+              />
+          </label>
+          
+          <input type="radio" v-model="selectedDice" value="d6" id="d6" />
+          <label for="d6">
+            d6<img src="./components/img/d6.png" class="img d-block" id="d6img"
+              />
+            </label>
+            
+            <input type="radio" v-model="selectedDice" value="d8" id="d8"/>
+            <label for="d8">
+              d8 <img src="./components/img/d8.png" class="img d-block" id="d8img"
+              />
+            </label>
+            
+            <input type="radio" v-model="selectedDice" value="d10" id="d10" />
+            <label for="d10">
+              d10 <img src="./components/img/d10.png" class="img d-block" id="d10img"
+              />
+            </label>
+            
+            <input type="radio" v-model="selectedDice" value="d12" id="d12"/>
+            <label for="d12">
+              d12<img src="./components/img/d12.png" class="img d-block" id="d12img"
+              />
+            </label>
+            
+            <input type="radio" v-model="selectedDice" value="d20"  id="d20"/>
+            <label for="d20">
+              d20<img src="./components/img/d20.png" class="img d-block" id="d20img"
+              />
+            </label>
+            
+            <input type="radio" v-model="selectedDice" value="d100" id="d100" />
+            <label for="d100">
+              d100<img src="./components/img/d100.png" class="img d-block" id="d100img"
+              />
+            </label>
+          </form>
+        </div>
+      </div>
+    </div>
   </div>
 <Style>
 #navbar {
