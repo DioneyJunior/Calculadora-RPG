@@ -141,7 +141,7 @@ export default {
   data() {
     return {
       selectedDice: "d10",
-      result: null
+      result: null,
     };
   },
   name: "App",
