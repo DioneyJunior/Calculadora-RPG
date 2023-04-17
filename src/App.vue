@@ -124,6 +124,13 @@
         />
         <label class="form-check-label" for="proftrue">Adicionar proficiência</label>
       </form>
+      <br />
+      <!-- Botão rolar dado -->
+      <button type="button" class="btn btn-primary" id="btnRoll" @click="btnRollClick()">
+        Rolar dado
+      </button>
+    </div>
+    <br />
   <Style>
     nav { position: fixed; bottom: 0; width: 100%; background-color: #484747; border-bottom: 5px
     solid #000000; } @media (max-width: 768px) { .navbar #btn-ficha { display: none; } } 
