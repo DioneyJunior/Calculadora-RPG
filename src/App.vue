@@ -142,6 +142,7 @@ export default {
     return {
       selectedDice: "d10",
       result: null,
+      outputText: "",
       selectedAttribute: null,
       proficiencyCheckbox: null,
     };
@@ -151,6 +152,26 @@ export default {
     CharacterInputs, 
   },
   methods: {
+    btnRollClick() {
+      var character = JSON.parse(localStorage.getItem("character"));
+      const diceValue = this.rollDice(this.selectedDice);
+      const bonusValue = this.getAttributeBonus(this.selectedAttribute);
+      const bonusText = this.getAttributeLabel(this.selectedAttribute);
+
+      let total = diceValue;
+      let rollText = `Dado(${diceValue})`;
+      if (bonusValue !== undefined) {
+        total += bonusValue;
+        rollText += `, ${bonusText}`;
+      }
+      if (this.proficiencyCheckbox) {
+        total += character.prof;
+        rollText += `, Proficiência(${character.prof})`;
+      }
+      this.result = total;
+      this.outputText = rollText;
+    },
+
     rollDice(diceName) {
       const random = (min, max) => Math.floor(Math.random() * (max - min + 1) + min);
 
