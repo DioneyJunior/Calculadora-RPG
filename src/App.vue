@@ -32,36 +32,63 @@
     <CharacterInputs />
   </header>
   <br />
+        <!-- dados -->
+        <div class="col-12 text-center">
+          <form>
+            <input type="radio" v-model="selectedDice" value="d4" id="d4" />
+            <label for="d4">
+              d4
+              <img v-if="selectedDice !== 'd4'" src="img/d4.png" class="img d-block" />
+              <img v-if="selectedDice === 'd4'" src="img/d4_check.png" class="img d-block" />
+              <img src="img/d4_check.png" class="img d-none" />
             </label>
-            
-            <input type="radio" v-model="selectedDice" value="d8" id="d8"/>
+
+            <input type="radio" v-model="selectedDice" value="d6" id="d6" />
+            <label for="d6">
+              d6
+              <img v-if="selectedDice !== 'd6'" src="img/d6.png" class="img d-block" />
+              <img v-if="selectedDice === 'd6'" src="img/d6_check.png" class="img d-block" />
+              <img src="img/d6_check.png" class="img d-none" /><!-- Preload dice img -->
+            </label>
+
+            <input type="radio" v-model="selectedDice" value="d8" id="d8" />
             <label for="d8">
-              d8 <img src="./components/img/d8.png" class="img d-block" id="d8img"
-              />
+              d8
+              <img v-if="selectedDice !== 'd8'" src="img/d8.png" class="img d-block" />
+              <img v-if="selectedDice === 'd8'" src="img/d8_check.png" class="img d-block" />
+              <img src="img/d8_check.png" class="img d-none" /><!-- Preload dice img -->
             </label>
-            
+
             <input type="radio" v-model="selectedDice" value="d10" id="d10" />
             <label for="d10">
-              d10 <img src="./components/img/d10.png" class="img d-block" id="d10img"
-              />
+              d10
+              <img v-if="selectedDice !== 'd10'" src="img/d10.png" class="img d-block" />
+              <img v-if="selectedDice === 'd10'" src="img/d10_check.png" class="img d-block" />
+              <img src="img/d10_check.png" class="img d-none" /><!-- Preload dice img -->
             </label>
-            
-            <input type="radio" v-model="selectedDice" value="d12" id="d12"/>
+
+            <input type="radio" v-model="selectedDice" value="d12" id="d12" />
             <label for="d12">
-              d12<img src="./components/img/d12.png" class="img d-block" id="d12img"
-              />
+              d12
+              <img v-if="selectedDice !== 'd12'" src="img/d12.png" class="img d-block" />
+              <img v-if="selectedDice === 'd12'" src="img/d12_check.png" class="img d-block" />
+              <img src="img/d12_check.png" class="img d-none" /><!-- Preload dice img -->
             </label>
-            
-            <input type="radio" v-model="selectedDice" value="d20"  id="d20"/>
+
+            <input type="radio" v-model="selectedDice" value="d20" id="d20" />
             <label for="d20">
-              d20<img src="./components/img/d20.png" class="img d-block" id="d20img"
-              />
+              d20
+              <img v-if="selectedDice !== 'd20'" src="img/d20.png" class="img d-block" />
+              <img v-if="selectedDice === 'd20'" src="img/d20_check.png" class="img d-block" />
+              <img src="img/d20_check.png" class="img d-none" /><!-- Preload dice img -->
             </label>
-            
+
             <input type="radio" v-model="selectedDice" value="d100" id="d100" />
             <label for="d100">
-              d100<img src="./components/img/d100.png" class="img d-block" id="d100img"
-              />
+              d100
+              <img v-if="selectedDice !== 'd100'" src="img/d100.png" class="img d-block" />
+              <img v-if="selectedDice === 'd100'" src="img/d100_check.png" class="img d-block" />
+              <img src="img/d100_check.png" class="img d-none" /><!-- Preload dice img -->
             </label>
           </form>
         </div>
