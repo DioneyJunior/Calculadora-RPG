@@ -142,6 +142,8 @@ export default {
     return {
       selectedDice: "d10",
       result: null,
+      selectedAttribute: null,
+      proficiencyCheckbox: null,
     };
   },
   name: "App",
@@ -185,13 +187,44 @@ export default {
 
       return result;
     },
+
+    getAttributeBonus(attributeName) {
+      var character = JSON.parse(localStorage.getItem("character"));
+      var bonusValue;
+
+      switch (attributeName) {
+        case "str":
+          bonusValue = character.str;
+          break;
+
+        case "cons":
+          bonusValue = character.cons;
+          break;
+
+        case "dex":
+          bonusValue = character.dex;
+          break;
+
+        case "int":
+          bonusValue = character.int;
+          break;
+
+        case "wis":
+          bonusValue = character.wis;
+          break;
+
+        case "char":
+          bonusValue = character.char;
           break;
 
         default:
+          bonusValue = undefined;
           break;
       }
-    }
-  }
+
+      return bonusValue;
+    },
+
   }
 };
 </script>
