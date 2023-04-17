@@ -94,26 +94,36 @@
         </div>
       </div>
     </div>
-  </div>
-  <br />
-  <div class="container justify-content-center d-flex">
-    <button class="btn btn-primary" @click.prevent="rollDice">Rolar Dado</button>
-  </div>
-  <br />
-  <div id="result-box" class="container text-center">
-    <button
-    type="button"
-    class="btn btn-secondary btn-lg"
-    data-bs-container="body"
-    data-bs-toggle="popover"
-    data-bs-placement="top"
-    data-bs-content="Zero"
-    id="output"
-    >
-    {{ result }}
-  </button>
-</div>
+    <div class="row m-0 justify-content-center mb-3">
+      <div class="col-8 col-md-6 col-lg-4 col-xl-3">
+        <select class="form-select" v-model="selectedAttribute">
+          <option value="padrão">Sem atributo-chave</option>
 
+          <option value="str">Força</option>
+
+          <option value="cons">Constituição</option>
+
+          <option value="dex">Destreza</option>
+
+          <option value="int">Inteligência</option>
+
+          <option value="wis">Sabedoria</option>
+
+          <option value="char">Carisma</option>
+        </select>
+      </div>
+    </div>
+    <!-- proficiencia checkbox -->
+    <div class="container text-center">
+      <form id="prof">
+        <input
+          v-model="proficiencyCheckbox"
+          class="form-check-input"
+          type="checkbox"
+          id="proftrue"
+        />
+        <label class="form-check-label" for="proftrue">Adicionar proficiência</label>
+      </form>
   <Style>
     nav { position: fixed; bottom: 0; width: 100%; background-color: #484747; border-bottom: 5px
     solid #000000; } @media (max-width: 768px) { .navbar #btn-ficha { display: none; } } 
