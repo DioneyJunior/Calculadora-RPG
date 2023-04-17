@@ -3,14 +3,25 @@
   <header>
     <nav class="navbar navbar-expand-lg p-0" id="navbar">
       <div>
-        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas"
-          aria-controls="offcanvas">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvas"
+          aria-controls="offcanvas"
+        >
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav">
-            <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas"
-              aria-controls="offcanvas" id="btn-ficha">
+            <button
+              class="btn btn-primary"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvas"
+              aria-controls="offcanvas"
+              id="btn-ficha"
+            >
               <i class="bi bi-person-fill"></i>
               Ficha de Personagem
             </button>
@@ -77,22 +88,8 @@
 </div>
 
   <Style>
-    nav {
-      position: fixed;
-      bottom: 0;
-      width: 100%;
-      background-color: #484747;
-      border-bottom: 5px solid #000000;
-    }
-
-    @media (max-width: 768px) {
-      .navbar #btn-ficha {
-        display: none;
-      }
-    }
-
-
-</Style>
+    nav { position: fixed; bottom: 0; width: 100%; background-color: #484747; border-bottom: 5px
+    solid #000000; } @media (max-width: 768px) { .navbar #btn-ficha { display: none; } } 
 </template>
 <script>
 import CharacterInputs from "./components/CharacterInputs.vue";
