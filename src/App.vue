@@ -132,35 +132,42 @@ export default {
     CharacterInputs, 
   },
   methods: {
-    rollDice() {
+    rollDice(diceName) {
       const random = (min, max) => Math.floor(Math.random() * (max - min + 1) + min);
-      switch (this.selectedDice) {
+
+      let result;
+      switch (diceName) {
         case "d4":
-          this.result = random(1, 4);
+          result = random(1, 4);
           break;
 
         case "d6":
-          this.result = random(1, 6);
+          result = random(1, 6);
           break;
 
         case "d8":
-          this.result = random(1, 8);
+          result = random(1, 8);
           break;
 
         case "d10":
-          this.result = random(1, 10);
+          result = random(1, 10);
           break;
 
         case "d12":
-          this.result = random(1, 12);
+          result = random(1, 12);
           break;
 
         case "d20":
-          this.result = random(1, 20);
+          result = random(1, 20);
           break;
 
         case "d100":
-          this.result = random(1, 100);
+          result = random(1, 100);
+          break;
+      }
+
+      return result;
+    },
           break;
 
         default:
