@@ -32,6 +32,9 @@
     <CharacterInputs />
   </header>
   <br />
+  <div id="content-wrapper" class="row p-0 m-0 align-items-center justify-content-center">
+    <div class="col-12 py-3">
+      <div class="row p-0 m-0">
         <!-- dados -->
         <div class="col-12 text-center">
           <form>
@@ -155,8 +158,19 @@
   </div>
   <Style>
     nav { position: fixed; bottom: 0; width: 100%; background-color: #484747; border-bottom: 5px
-    solid #000000; } @media (max-width: 768px) { .navbar #btn-ficha { display: none; } } 
+    solid #000000; } @media (max-width: 768px) { .navbar #btn-ficha { display: none; } } body {
+    background-color: #9f9a9a; } .img d-block { margin: 20%; } #content-wrapper { flex: 1 0 auto; }
+    #btnRoll { margin-bottom: 2.7%; } /* input */ .img { border: 50%; padding: 2px; } label img {
+    cursor: pointer; display: block; } input[type="radio"] { display: none; margin: 10px; }
+    input[type="radio"] label { display: flex; align-items: center; justify-content: center; }
+    input[type="radio"]:checked+label { color: #ffffff; } @media (max-width: 1080px) { img { height:
+    100%; max-height: 100px; } } @media (max-width: 2160px) { img { height: 100%; max-height: 200px;
+    } } /* icones */ .icon { display: inline; width: 24px; height: 24px; } /* footer */ footer {
+    color: #ccc; text-align: center; bottom: 0; width: 100%; background: #484747; border-top: 5px
+    solid #000000; }
+  </Style>
 </template>
+
 <script>
 import CharacterInputs from "./components/CharacterInputs.vue";
 export default {
