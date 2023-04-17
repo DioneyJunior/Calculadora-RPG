@@ -131,6 +131,17 @@
       </button>
     </div>
     <br />
+    <!-- resultado -->
+    <div id="result-box" class="container text-center">
+      <button @click="isOpen = !isOpen" type="button" class="btn btn-secondary btn-lg">
+        {{ result }}
+      </button>
+      <div class="align align-content-center">
+        <p v-show="isOpen" id="outputText" class="text-white">
+          {{ outputText }}
+        </p>
+      </div>
+    </div>
   <Style>
     nav { position: fixed; bottom: 0; width: 100%; background-color: #484747; border-bottom: 5px
     solid #000000; } @media (max-width: 768px) { .navbar #btn-ficha { display: none; } } 
@@ -145,6 +156,7 @@ export default {
       outputText: "",
       selectedAttribute: null,
       proficiencyCheckbox: null,
+      isOpen: false
     };
   },
   name: "App",
