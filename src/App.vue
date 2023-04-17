@@ -142,6 +142,17 @@
         </p>
       </div>
     </div>
+    <!-- Rodapé -->
+    <footer class="mt-auto">
+      <div class="container-fluid">
+        <div class="row p-0 m-0">
+          <div class="col-12 p-0 m-0 py-2">
+            <p>Acerto Crítico &copy; 2023</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
   <Style>
     nav { position: fixed; bottom: 0; width: 100%; background-color: #484747; border-bottom: 5px
     solid #000000; } @media (max-width: 768px) { .navbar #btn-ficha { display: none; } } 
