@@ -225,6 +225,38 @@ export default {
       return bonusValue;
     },
 
+    getAttributeLabel(attributeName) {
+      var character = JSON.parse(localStorage.getItem("character"));
+      var attributeLabel = "";
+
+      switch (attributeName) {
+        case "str":
+          attributeLabel = `Força (${character.str})`;
+          break;
+
+        case "cons":
+          attributeLabel = `Constituição (${character.cons})`;
+          break;
+
+        case "dex":
+          attributeLabel = `Destreza (${character.dex})`;
+          break;
+
+        case "int":
+          attributeLabel = `Inteligência (${character.int})`;
+          break;
+
+        case "wis":
+          attributeLabel = `Sabedoria (${character.wis})`;
+          break;
+
+        case "char":
+          attributeLabel = `Carisma (${character.char})`;
+          break;
+      }
+
+      return attributeLabel;
+    }
   }
 };
 </script>
