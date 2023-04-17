@@ -1,5 +1,4 @@
 <template>
-  
   <header>
     <nav class="navbar navbar-expand-lg p-0" id="navbar">
       <div>
@@ -186,7 +185,7 @@ export default {
   },
   name: "App",
   components: {
-    CharacterInputs, 
+    CharacterInputs
   },
   methods: {
     btnRollClick() {
