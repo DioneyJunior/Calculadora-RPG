@@ -211,8 +211,8 @@ export default {
         rollText += `, ${bonusText}`;
       }
       if (this.proficiencyCheckbox) {
-        total += character.prof;
-        rollText += `, Proficiência(${character.prof})`;
+        total += character ? character.prof || 0 : 0;
+        rollText += `, Proficiência(${character ? character.prof || 0 : 0})`;
       }
       this.result = total;
       this.outputText = rollText;
@@ -262,29 +262,23 @@ export default {
 
       switch (attributeName) {
         case "str":
-          bonusValue = character.str;
+          bonusValue = character ? character.str || 0 : 0;
           break;
-
         case "cons":
-          bonusValue = character.cons;
+          bonusValue = character ? character.cons || 0 : 0;
           break;
-
         case "dex":
-          bonusValue = character.dex;
+          bonusValue = character ? character.dex || 0 : 0;
           break;
-
         case "int":
-          bonusValue = character.int;
+          bonusValue = character ? character.int || 0 : 0;
           break;
-
         case "wis":
-          bonusValue = character.wis;
+          bonusValue = character ? character.wis || 0 : 0;
           break;
-
         case "char":
-          bonusValue = character.char;
+          bonusValue = character ? character.char || 0 : 0;
           break;
-
         default:
           bonusValue = undefined;
           break;
@@ -299,27 +293,27 @@ export default {
 
       switch (attributeName) {
         case "str":
-          attributeLabel = `Força (${character.str})`;
+          attributeLabel = `Força (${character ? character.str || 0 : 0})`;
           break;
 
         case "cons":
-          attributeLabel = `Constituição (${character.cons})`;
+          attributeLabel = `Constituição (${character ? character.cons || 0 : 0})`;
           break;
 
         case "dex":
-          attributeLabel = `Destreza (${character.dex})`;
+          attributeLabel = `Destreza (${character ? character.dex || 0 : 0})`;
           break;
 
         case "int":
-          attributeLabel = `Inteligência (${character.int})`;
+          attributeLabel = `Inteligência (${character ? character.int || 0 : 0})`;
           break;
 
         case "wis":
-          attributeLabel = `Sabedoria (${character.wis})`;
+          attributeLabel = `Sabedoria (${character ? character.wis || 0 : 0})`;
           break;
 
         case "char":
-          attributeLabel = `Carisma (${character.char})`;
+          attributeLabel = `Carisma (${character ? character.char || 0 : 0})`;
           break;
       }
 
