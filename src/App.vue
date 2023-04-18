@@ -140,6 +140,7 @@
         @click="isOpen = !isOpen"
         type="button"
         class="btn btn-secondary btn-lg"
+        id="btnResult"
       >
         {{ result }}
       </button>
@@ -149,6 +150,8 @@
         </p>
       </div>
     </div>
+    <br />
+    <br />
     <!-- Rodapé -->
     <footer class="mt-auto">
       <div class="container-fluid">
@@ -171,7 +174,8 @@
     100%; max-height: 100px; } } @media (max-width: 2160px) { img { height: 100%; max-height: 200px;
     } } /* icones */ .icon { display: inline; width: 24px; height: 24px; } /* footer */ footer {
     color: #ccc; text-align: center; bottom: 0; width: 100%; background: #484747; border-top: 5px
-    solid #000000; }
+    solid #000000; } #outputText { margin-bottom: 2%; margin-top:0.2% } #btnResult { margin-bottom:
+    1.75%; }
   </Style>
 </template>
 
