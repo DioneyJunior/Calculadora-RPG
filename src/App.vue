@@ -143,6 +143,7 @@
         id="btnResult"
       >
         {{ result }}
+        <i class="bi bi-info-circle"></i>
       </button>
       <div class="align align-content-center">
         <p v-show="isOpen" id="outputText" class="text-white">
