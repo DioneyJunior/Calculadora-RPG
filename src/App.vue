@@ -135,7 +135,12 @@
     <br />
     <!-- resultado -->
     <div id="result-box" class="container text-center">
-      <button @click="isOpen = !isOpen" type="button" class="btn btn-secondary btn-lg">
+      <button
+        v-show="showResult"
+        @click="isOpen = !isOpen"
+        type="button"
+        class="btn btn-secondary btn-lg"
+      >
         {{ result }}
       </button>
       <div class="align align-content-center">
@@ -180,7 +185,8 @@ export default {
       outputText: "",
       selectedAttribute: null,
       proficiencyCheckbox: null,
-      isOpen: false
+      isOpen: false,
+      showResult: false
     };
   },
   name: "App",
@@ -206,6 +212,7 @@ export default {
       }
       this.result = total;
       this.outputText = rollText;
+      this.showResult = true;
     },
 
     rollDice(diceName) {
