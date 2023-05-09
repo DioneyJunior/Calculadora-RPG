@@ -1,6 +1,52 @@
-# calculadora-rpg
+# calculadora-rpg 🎲
 
-This template should help get you started developing with Vue 3 in Vite.
+Ferramenta para ficha de personagem simplificada e rolagens de dados para rpg de mesa.
+
+## Funcionalidades
+
+- Adicionar nome e valores de atributos do personagem.
+
+- Salvar informações no LocalStorage do navegador.
+
+- Fazer rolagem de diferentes dados para obter um resultado final.
+
+## Tecnologias utilizadas
+
+- JavaScript
+- Bootstrap
+- Vue
+- HTML
+- CSS
+
+## Contribuições
+
+```bash
+#Faça um fork do repositório.
+```
+
+```bash
+#Instale as depêndencias.
+$ npm install
+```
+
+```bash
+#Crie uma branch para sua feature
+$ git checkout -b feature/sua-feature
+```
+
+```bash
+#Commit suas mudanças
+$ git commit -m 'Adicionando uma nova feature'
+```
+
+```bash
+#Faça push para a branch
+$ git push origin feature/sua-feature
+```
+
+```bash
+#Abra um Pull Request.
+```
 
 ## Recommended IDE Setup
 
