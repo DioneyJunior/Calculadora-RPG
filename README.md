@@ -1,6 +1,9 @@
-# calculadora-rpg 🎲
+# Acerto-Crítico 🎲
 
 Ferramenta para ficha de personagem simplificada e rolagens de dados para rpg de mesa.
+
+## Hospedagem
+Acerto-Crítico pode ser acessado em: https://acerto-critico.pages.dev/
 
 ## Funcionalidades
 
@@ -9,6 +12,16 @@ Ferramenta para ficha de personagem simplificada e rolagens de dados para rpg de
 - Salvar informações no LocalStorage do navegador.
 
 - Fazer rolagem de diferentes dados para obter um resultado final.
+
+
+## Capturas de Tela
+
+![Tela de rolagem de dados](https://github.com/DioneyJunior/Calculadora-RPG/assets/123474113/be42736e-9193-493e-a4a5-55ab1b901a90)
+
+![Tela com ficha de personagem](https://github.com/DioneyJunior/Calculadora-RPG/assets/123474113/0eb76d8b-ad9c-4b5e-bde9-3cdeae51ab87)
+
+![Ficha de personagem em tela mobile responsiva](https://github.com/DioneyJunior/Calculadora-RPG/assets/123474113/1ca5794c-6ab6-46f4-9361-dd21b0ee9c50)
+
 
 ## Tecnologias utilizadas
 
